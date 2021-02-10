@@ -5,6 +5,7 @@ import java.util.Date;
 
 @Entity
 @Table(name="OPERATION")
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Operation {
     @Id
     private int id;
