@@ -13,6 +13,9 @@ public class Operation {
     private Date date;
     private double montant;
     private String motif;
+    
+    @ManyToOne
+    private Compte compte;
 
     public Operation(){
 
